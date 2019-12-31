@@ -1,38 +1,54 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Colored Design - étape 2</title>
+    <title>Colored Design - étape 3</title>
     <link rel="stylesheet" href="css/style.css">
 
     <style>
-       header h1 {
-           /* hauteur du h1 dans le header */
+        header h1 {
+            /* hauteur du h1 dans le header */
             height: 258px;
+            background: url(img/apple.jpg) no-repeat left bottom; 
+            /* background-image: url(img/apple.jpg);
+            background-repeat: no-repeat;
+            background-position: left bottom; */
         }
 
-        body {
-            background-color: #ddeeaa;
-            /* préciser les margin permet de fixer et de bien caler la page */
+        body { 
             margin: 10px 0;
             padding: 0;
             /* text-align center à cause d'internet Explorer (les anciennes versions d'IE) */
             text-align: center;
+            font: 0.8em "Trebuchet MS", Helvetica, sans-serif; /*ceci est la version raccourcie des 2 lignes suivantes*/
+            /* font-size: 0.8em; */
+            /* utiliser les "" si plusieurs caractères */
+            /* font-family: "Trebuchet MS", Helvetica, sans-serif;*/
+            background-color: #ddeeaa; 
         }
 
         #conteneur {
             /* margin 0 et auto (marge automatique) pour centrer le conteneur dans la page ATTENTION à donner une largeur */
             width: 800px;
             margin: 0 auto;
-            background-color: white;
+            background-color: #fff;
             border: 2px solid #aabb44;
             text-align: left;
         }
 
+        main h2 {
+            padding-left: 25px;
+            font-size: 1.4em;
+            color: #9b2;
+            background: url(img/little_apple.gif) no-repeat left bottom;
+            border-bottom: 1px solid #9b2;
+        }
     </style>
 </head>
+
 <body>
     <!-- cette div contient l'ensemble de la page ; on peut parfois l'appeler "wrapper", "contenu" ou div id="main" etc -->
     <div id="conteneur">
@@ -76,4 +92,5 @@
         </footer>
     </div>
 </body>
+
 </html>
