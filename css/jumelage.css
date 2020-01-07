@@ -4,7 +4,7 @@ body {
     padding: 0;
     /* text-align center à cause d'internet Explorer (les anciennes versions d'IE) */
     text-align: center;
-    font: 0.8em 'PT Sans', sans-serif;
+    font: 0.8em 'Lora', serif;
     background-color: #ddeeaa;
 }
 
@@ -64,8 +64,7 @@ ul#menu li a {
     /* grâce à la propriété display:block, on peut dimensionner les a */
     display: block;
     border-right: 2px solid #dea;
-
-    font-size: 1.2em;
+    font: 1.2em ;
     font-weight: bold;
     text-decoration: none;
     line-height: 25px;
@@ -87,7 +86,11 @@ main {
     background-position: 15px 15px;
 }
 
-main h2 {
+h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+main h2 { 
     padding-left: 25px;
     background: url(../img/little_apple.gif) no-repeat left bottom;
     border-bottom: 1px solid #9b2;
